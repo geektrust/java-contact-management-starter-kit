@@ -1,5 +1,6 @@
 public class Main {
 
+    private static final ContactManager manager = new ContactManager();
     /*
      ***********************************************
      * This is the driver code. Don't change it!!!
@@ -19,8 +20,7 @@ public class Main {
 
         String[] cmd = cmdLine.trim().split(" ");
         String cmdName = cmd[0];
-
-        ContactManager manager = new ContactManager();
+        
         switch (cmdName) {
             case "ADD":
                 manager.addContact(new Contact(cmd[1], cmd[2]));
