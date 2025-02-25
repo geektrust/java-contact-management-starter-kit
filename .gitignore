@@ -31,3 +31,6 @@ dist/
 .settings/
 
 jacoco.xml
+
+build/
+dist/
